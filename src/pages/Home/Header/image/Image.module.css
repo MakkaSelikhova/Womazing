@@ -1,0 +1,26 @@
+.img {
+  width: 434px;
+  position: relative;
+  background: center/cover no-repeat;
+}
+.img__main {
+  width: 434px;
+  height: 652px;
+  background: center/cover no-repeat;
+}
+.img__two {
+  height: 197px;
+  width: 197px;
+  position: absolute;
+  top: 123px;
+  left: 340px;
+  background: center/cover no-repeat;
+}
+.img__three {
+  height: 318px;
+  width: 190px;
+  position: absolute;
+  top: 388px;
+  right: 350px;
+  background: center/cover no-repeat;
+}/*# sourceMappingURL=Image.module.css.map */
