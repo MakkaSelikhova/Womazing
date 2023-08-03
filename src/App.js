@@ -9,13 +9,13 @@ import Brand from "./pages/Brand/Brand"
 const App = () => {
   return (
     <div>
-      <div className={styles.container}>
+      <div className={styles}>
         <Nav />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="store"element={<Store/>}/>
-        <Route path="brand"element={<Brand/>}/>
+        <Route path="store22222"element={<Store/>}/>
       </Routes>
 
       <div className={styles.app__backgroundFooter}>
