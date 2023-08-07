@@ -5,11 +5,13 @@ import Img from './photo/idea.png';
 import BrandHeaderline from "../../components/brand/BrandHeaderline";
 import BrandText from "../../components/brandText/BrandText";
 import Img2 from "./photo/magic.png";
-
+import Path from "../../components/path/Path"
+import Btn from "../Home/Header/btn/Btn";
 const Brand = () => {
   return (
     <div className={styles.container}>
       <Headerline text="О Бренде" />
+      <Path/>
       <div className={styles.brand__first}>
         <BrandImg backgroundImage={`url(${Img})`} />
         <div className={styles.brand__firstText}>
@@ -30,6 +32,7 @@ const Brand = () => {
         </div>
         <BrandImg backgroundImage={`url(${Img2})`} />
       </div>
+      <Btn text="Перейти в магазин"/>
     </div>
   );
 };

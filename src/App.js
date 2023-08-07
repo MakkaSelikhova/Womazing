@@ -5,6 +5,8 @@ import Nav from "./components/nav/Nav";
 import Home from "./pages/Home/Home";
 import Store from "./pages/Store/Store";
 import Brand from "./pages/Brand/Brand"
+import Contacts from "./pages/Contacts/Contacts";
+import Product from "./pages/Product/Product";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="store"element={<Store/>}/>
         <Route path="brand"element={<Brand/>}/>
+        <Route path="contacts" element={<Contacts/>}/>
+        <Route  element={<Product/>}/>
       </Routes>
 
       <div className={styles.app__backgroundFooter}>

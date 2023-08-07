@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from "react";
+
 import styles from "./Catalog.module.sass";
 
-const Catalog = () => {
-  const [catalog, setCatalog] = useState([]);
-
-  useEffect(() => {
-    fetch("https://64b6a003df0839c97e15e431.mockapi.io/products")
-      .then((res) => res.json())
-      .then((data) => setCatalog(data));
-  }, []);
+const Catalog = ({catalog}) => {
+  
 
   return (
     <div className={styles.store}>
