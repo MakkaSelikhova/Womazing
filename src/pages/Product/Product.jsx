@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import Headerline from "../../components/headerline/Headerline";
 import styles from "./Product.module.sass";
-import { useParams } from "react-router-dom";
 
-const Product = () => {
-  const {productId } = useParams();
+const Product = ({ productId }) => {
+
   
   const [product, setProduct] = useState([]);
   

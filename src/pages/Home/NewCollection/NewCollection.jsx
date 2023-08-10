@@ -4,7 +4,7 @@ import Button from "./button/Button";
 import Title from "../../../components/title/Title";
 import { Link } from "react-router-dom";
 
-const NewCollection = () => {
+const NewCollection = ({ setProductId }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,11 @@ const NewCollection = () => {
       <div className={styles.newCollection}>
         {data.map((data) => (
           <div key={data.id}>
-            <Link to={`/product/${data.id}`}>
+            <Link
+              key={data.id}
+              to="/product"
+              onClick={() => setProductId(data.id)}
+            >
               <div
                 style={{ backgroundImage: `url(${data.imageUrl})` }}
                 src={data.imageUrl}

@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import styles from "./Catalog.module.sass";
 
-const Catalog = ({catalog}) => {
+const Catalog = ({catalog, setProductId}) => {
+  
+
   return (
     <div className={styles.store}>
       {catalog.map((item) => (
-        <Link to={`/product/${item.id}`}>
+        <Link key={item.id} to="/product" onClick={()=>setProductId(item.id)}>
           <div
             style={{ backgroundImage: `url(${item.imageUrl})` }}
             src={item.imageUrl}
