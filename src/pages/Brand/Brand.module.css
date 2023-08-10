@@ -138,6 +138,7 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 214px;
 }
 .brand__firstText {
   width: 542px;

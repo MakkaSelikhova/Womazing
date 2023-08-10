@@ -138,10 +138,11 @@ legend {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin: 214px 0 325px;
 }
 .store__img {
   width: 350px;
-  height: 598px;
+  height: 478px;
   background: center/cover no-repeat;
 }
 .store__text {

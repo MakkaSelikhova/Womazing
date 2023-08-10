@@ -5,7 +5,7 @@ import Path from "../../components/path/Path";
 import Filters from "./filters/Filters";
 import React, { useState, useEffect } from "react";
 
-const Store = () => {
+const Store = ({setProductId}) => {
   const [catalog, setCatalog] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Store = () => {
         <Headerline text="Магазин" />
         <Path/>
         <Filters setCatalog={setCatalog}/>
-        <Catalog  catalog={catalog}/>
+        <Catalog  catalog={catalog} setProductId={setProductId}/>
       </div>
     </div>
   );

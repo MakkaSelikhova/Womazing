@@ -8,8 +8,10 @@ const Path = () => {
   return (
     <div className={styles.path__main}>
       {pathItems.map(({ text, link, id }) => (
-        <div className={styles.path__itame} key={id}>
-          <Link to={link}>{text}</Link>
+        <div className={styles.path__item} key={id}>
+          <Link to={link}>{text} 
+          <span>{pathItems.length-1 !==id ? "—":""}</span> </Link>
+          
         </div>
       ))}
     </div>
