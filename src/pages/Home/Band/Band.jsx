@@ -6,7 +6,7 @@ import Img from "./img/Img";
 
 const Band = () => {
   return (
-    <div className={styles.container}>      
+    <div className="container">      
       <div className={styles.band__title}>
         <Title text="Команда мечты Womazing" />
       </div>

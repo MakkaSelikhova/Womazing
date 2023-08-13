@@ -1,17 +1,17 @@
 import Headerline from "../../components/headerline/Headerline";
 import styles from "./Brand.module.sass";
 import BrandImg from "./brandImg/BrandImg";
-import Img from './photo/idea.png';
+import Img from "./photo/idea.png";
 import BrandHeaderline from "../../components/brand/BrandHeaderline";
 import BrandText from "../../components/brandText/BrandText";
 import Img2 from "./photo/magic.png";
-import Path from "../../components/path/Path"
+import Path from "../../components/path/Path";
 import Btn from "../Home/Header/btn/Btn";
 const Brand = () => {
   return (
     <div className={styles.container}>
       <Headerline text="О Бренде" />
-      <Path/>
+      <Path />
       <div className={styles.brand__first}>
         <BrandImg backgroundImage={`url(${Img})`} />
         <div className={styles.brand__firstText}>
@@ -32,7 +32,7 @@ const Brand = () => {
         </div>
         <BrandImg backgroundImage={`url(${Img2})`} />
       </div>
-      <Btn text="Перейти в магазин"/>
+      <Btn text="Перейти в магазин" />
     </div>
   );
 };

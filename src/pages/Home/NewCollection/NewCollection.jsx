@@ -17,7 +17,7 @@ const NewCollection = ({ setProductId }) => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Title text="Новая коллекция" />
       <div className={styles.newCollection}>
         {data.map((data) => (
@@ -35,7 +35,7 @@ const NewCollection = ({ setProductId }) => {
               ></div>
 
               <h4 className={styles.newCollection__text}>{data.name}</h4>
-              <p className={styles.newCollection__price}>{data.price}</p>
+              <p className={styles.newCollection__price}>{data.price} ₽</p>
             </Link>
           </div>
         ))}

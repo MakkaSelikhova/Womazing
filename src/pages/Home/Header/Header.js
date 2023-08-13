@@ -6,7 +6,7 @@ import Headerline from "../../../components/headerline/Headerline";
 const Header = () => {
   return (
     <div className={styles.header__background}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.header__main}>
           <div className={styles.header__left}>
             <Headerline

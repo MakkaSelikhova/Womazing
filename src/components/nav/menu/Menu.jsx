@@ -1,4 +1,5 @@
 import styles from "./Menu.module.sass";
+import {Link} from "react-router-dom";
 
 const Menu = () => {
   const menuItems = [
@@ -13,7 +14,7 @@ const Menu = () => {
         <ul>
           {menuItems.map(({ text, link, id }) => (
             <li className={styles.menu__navItame} key={id}>
-              <a href={link}>{text}</a>
+              <Link to={link}>{text}</Link>
             </li>
           ))}
         </ul>

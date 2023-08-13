@@ -1,8 +1,8 @@
 import Title from "../../../components/title/Title";
 import styles from "./Promote.module.sass";
-import quality from "./../../../svg/quality .svg"
-import speed from "./../../../svg/speed .svg"
-import responsibility from "./../../../svg/responsibility .svg"
+import quality from "./../../../svg/quality .svg";
+import speed from "./../../../svg/speed .svg";
+import responsibility from "./../../../svg/responsibility .svg";
 
 const Promote = () => {
   const promoteItems = [
@@ -26,7 +26,7 @@ const Promote = () => {
     },
   ];
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Title text="Что для нас важно" />
       <div className={styles.promote__main}>
         {promoteItems.map(({ svg, title, text, id }) => (

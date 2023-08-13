@@ -14,7 +14,7 @@ const Store = ({setProductId}) => {
       .then((data) => setCatalog(data));
   }, []);
   return (
-    <div className={styles.container}>
+    <div className='container'>
       <div className={styles.store__main}>
         <Headerline text="Магазин" />
         <Path/>
