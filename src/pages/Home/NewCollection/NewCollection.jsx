@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import styles from "./NewCollection.module.sass";
 import Button from "./button/Button";
 import Title from "../../../components/title/Title";
 import { Link } from "react-router-dom";
+import { ProductContext } from "../../../App";
 
-const NewCollection = ({ setProductId }) => {
+const NewCollection = () => {
   const [data, setData] = useState([]);
+  const { setProductId } = useContext(ProductContext)
 
   useEffect(() => {
     fetch("https://64b6a003df0839c97e15e431.mockapi.io/products")

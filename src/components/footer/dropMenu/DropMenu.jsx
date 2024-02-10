@@ -1,20 +1,36 @@
 import styles from './DropMenu.module.sass'
-const DropMenu = () => {
-  const dropItems = [
-    { text: "Рубашки", link: "Shirt", id: 1 },
-    { text: "Жакеты", link: "Jacket", id: 2 },
-    { text: "Юбки", link: "Skirt", id: 3 },
-    { text: "Платки", link: "Handkerchief", id: 4 },
-  ];
+import {useEffect, useState} from "react";
+import { useNavigate } from "react-router-dom";
+const DropMenu = ({setCatalog}) => {
+  const [menuItem, setMenuItem] = useState([]);
+  const navigate = useNavigate();
+  useEffect(() => {
+    fetch("https://64b6a003df0839c97e15e431.mockapi.io/categories")
+        .then((res) => res.json())
+        .then((res) => setMenuItem(res));
+  }, []);
+
+  const updateData = (id) => {
+    fetch(
+        `https://64b6a003df0839c97e15e431.mockapi.io/products?categoryId=${id}`
+    )
+        .then((res) => res.json())
+        .then((res) => setCatalog(res));
+
+  };
+
+
   return (
     <div className={styles.dropMenu__main}>
-      <ul>
-        {dropItems.map(({ text, link, id }) => (
-          <li className={styles.drop__item} key={id}>
-            <a href={link}>{text}</a>
-          </li>
-        ))}
-      </ul>
+      {menuItem.map(({ name, id }) => (
+          <div
+              className={styles.dropMenu__item}
+              key={id}
+              onClick={() => updateData(id)}
+          >
+            {name}
+          </div>
+      ))}
     </div>
   );
 };

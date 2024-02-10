@@ -6,7 +6,7 @@ const Home = ({setProductId}) => {
   return (
     <div>
       <Header />
-      <NewCollection setProductId={setProductId}/>
+      <NewCollection />
       <Promote />
       <Band />
     </div>

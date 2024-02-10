@@ -1,7 +1,6 @@
 .container {
-  max-width: 1170px;
+  max-width: 1110px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 
 @font-face {
@@ -54,9 +53,8 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1110px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 
 @font-face {
@@ -111,4 +109,6 @@ body {
 .mail {
   font-weight: 400;
   font-size: 15px;
-}/*# sourceMappingURL=Mail.module.css.map */
+}
+
+/*# sourceMappingURL=Mail.module.css.map */
